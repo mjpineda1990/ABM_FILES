@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body{
+			background-color: #b6a5a5;
+		}
+		.MainDiv{
+			background-color: white;
+			width: 800px;
+			height: 500px;
+			border-radius: 20px;
+			margin-left: 20%;
+			margin-top: 5%;
+		}
+		button{
+			width: 150px;
+			height: 150px;
+			margin-left: 10%;
+			margin-top: 6%;
+		}
+		p{
+			font-size: 80px;
+			margin-left: 25%;
+		}
+
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<div class="MainDiv">
+<div class="container"><br><br>
+        <p id="time"><span id="minute">00</span>:<span id="second">00</span>:<span id="tens">00</span></p>
+        <button id="btn-start">Start</button>
+        <button id="btn-stop">Stop</button>
+        <button id="btn-reset">Reset</button>
+    </div>
+</div>
+ <script>
+ 	var minutes="00"
+  var seconds = "00";
+    var tens = "00";
+    var OutputMinutes = document.getElementById("minute")
+    var OutputSeconds = document.getElementById("second");
+    var OutputTens = document.getElementById("tens");
+    var buttonStart = document.getElementById("btn-start");
+    var buttonStop = document.getElementById("btn-stop");
+    var buttonReset = document.getElementById("btn-reset");
+    var Interval;
+
+    buttonStart.addEventListener('click', () => {
+        clearInterval(Interval);
+        Interval = setInterval(startTimer, 10);  // millisecond 10 = 0.01 second
+    });
+
+    buttonStop.addEventListener('click', () => {
+        clearInterval(Interval);
+    });
+
+    buttonReset.addEventListener('click', () => {
+        clearInterval(Interval);
+        minutes= "00"
+        tens = "00";
+        seconds = "00";
+        OutputSeconds.innerHTML = seconds;
+        OutputTens.innerHTML = tens;
+    });
+
+    function startTimer(){
+        tens++;
+        if(tens <= 9){
+            OutputTens.innerHTML = "0" + tens;
+        }
+
+        if(tens > 9){
+            OutputTens.innerHTML = tens;
+        }
+
+        if(tens > 99){
+            seconds++;
+            OutputSeconds.innerHTML = "0" + seconds;
+            tens = 0;
+            OutputTens.innerHTML = "0" + 0;
+        }
+
+        if(seconds > 9){
+            OutputSeconds.innerHTML = seconds;
+        }
+        if(minutes >9){
+        	OutputMinutes.innerHTML = minutes;
+        } 
+    }
+  </script>
+</body>
+</html>

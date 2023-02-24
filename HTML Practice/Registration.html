@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{
+  font-family: Garamond;
+  max-width: auto;
+  height: auto;
+  background-color: #F5C5B3;
+}
+.MainDiv{
+  background-color: white;
+  height: 500px;
+  width: 600px;
+  margin-left: 8%;
+  margin-top: 2%;
+  border-radius: 20px;
+}
+.Right_Div{
+  border-radius: 20px;
+  background-color: white;
+  height: 500px;
+  width: 600px;
+  margin-left: 48%;
+  margin-top: -32.5%;
+}
+#Header{
+  font-size:28px;
+  margin-left: 2%;
+}
+.row-form{
+  margin-left: 3%;
+  margin-right: 2%;
+}
+input.form-control{
+  width: 100%;
+}
+button {
+  background-color: #E4405F;
+  color: white;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  padding: 6px;
+}
+button:hover {
+  opacity: 0.8;
+}
+img{
+  width: 5%;
+}
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+  <div class="Head">
+    <div class="mHeader">
+      <h1 style="font-family: monospace;color: #E4405F;margin-left: 8%;margin-top: 3%;"><img src="walletlogo.jpeg"><b>Insta-wallet</b></h1>
+    </div>
+  </div>
+<div class="MainDiv">
+  <div class="Header1">
+    <h2 id="Header"><b>Create an Account</b></h2>
+  </div>
+  <div class="row-form">
+     <div class="row">
+    <div class="col-md-6">
+      <label for="uname"><b>First Name</b></label>
+      <input type="text" class="form-control" placeholder="Enter First name">
+    </div>
+    <div class="col-md-6">
+      <label for="uname"><b>Last Name</b></label>
+      <input type="text" class="form-control" placeholder="Enter Last name"><br>
+    </div>
+    </div>
+  </div>
+  <div class="row-form">
+    <div class="row">
+      <div class="form-check">
+        <div class="col-md-12" style="width:450px;">
+         <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+          <label><b>Male</b></label>
+          <input style="margin-left:1%;" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+          <label><b>Female</b></label>
+          <input style="margin-left: 1%;" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+          <label><b>LGBTQ+</b></label>
+          <input style="margin-left: 1%;" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+          <label><b>Prefer not to Specify</b></label>
+        </div> 
+      </div>
+        </div>
+    </div>
+  <div class="row-form">
+     <div class="row">
+    <div class="col-md-7">
+      <label for="address"><b>Address</b></label>
+      <input type="text" class="form-control" placeholder="1234 Street Name">
+    </div>
+    <div class="col-md-3">
+      <label for="uname"><b>Postal Code</b></label>
+      <input type="text" class="form-control" placeholder="A1A 1A1"><br>
+    </div>
+  </div>
+</div>
+ <div class="row-form">
+     <div class="row">
+    <div class="col-md-4">
+      <label for="address"><b>City</b></label>
+      <input type="text" class="form-control" placeholder="City">
+    </div>
+    <div class="col-md-3">
+      <label for="uname"><b>Phone Number</b></label>
+      <input type="text" class="form-control" placeholder="(123)-456-7891">
+    </div>
+    <div class="col-md-4">
+    <label><b>Province</b></label>
+     <select id="inputState" class="form-control form-control-md">
+     <option style="text-align: center;">---Please Select---</option>
+     <option>Alberta</option>
+     <option>British Columbia</option>
+     <option>Manitoba</option>
+     <option>New Brunswick</option>
+     <option>New Foundland</option>
+     <option>Northwest Territories</option>
+     <option>Nova Scotia</option>
+     <option>Nunavut</option>
+     <option>Ontario</option>
+     <option>Prince Edward Island</option>
+     <option>Saskatchewan</option>
+    </select><br>
+    </div>
+  </div>
+</div>
+<div class="row-form">
+     <div class="row">
+    <div class="col-md-4">
+      <label for="address"><b>Occupation</b></label>
+      <input type="text" class="form-control" placeholder=" ">
+    </div>
+    <div class="col-md-3">
+      <label for="uname"><b>Birthday</b></label>
+      <input type="text" class="form-control" placeholder="MM/DD/YYYY">
+    </div>
+    <div class="col-md-3">
+      <label for="uname"><b>S.I.N #</b></label>
+      <input type="text" class="form-control" placeholder="123-456-789">
+    </div>
+    </div>
+  </div>
+</div>
+<div class="Right_Div">
+  <div class="Header2">
+    <h3 style="font-size: 28px;margin-left: 2%;"><b>Create Username and Password<b></h3><hr>
+  </div>
+    <div class="row-form">
+     <div class="row">
+    <div class="col-md-6">
+      <label for="uname"><b>Create Username</b></label>
+      <input type="text" class="form-control" placeholder="Enter Username">
+    </div>
+    <div class="col-md-6">
+      <label for="uname"><b>Email Address</b></label>
+      <input type="email" class="form-control" placeholder="email_add@domain.com"><br>
+    </div>
+    </div>
+  </div>
+  <div class="row-form">
+     <div class="row">
+    <div class="col-md-6">
+      <label for="uname"><b>Create Password</b></label>
+      <input type="password" class="form-control" placeholder="Password">
+    </div>
+    <div class="col-md-6">
+      <label for="uname"><b>Confirm Email Address</b></label>
+      <input type="email" class="form-control" placeholder="email_add@domain.com"><br>
+    </div>
+    </div>
+  </div>
+  <div class="row-form">
+     <div class="row">
+    <div class="col-md-6">
+      <label for="uname"><b>Confirm Password</b></label>
+      <input type="password" class="form-control" placeholder="Password"><br>
+    </div>
+    </div>
+  </div>
+  <div class="row-form">
+    <div class="row">
+      <div class="col-md-12">
+        <label><input type="checkbox" name="agreement"> I have read and accept the<a href="#">Terms of Services</a>&<a href="#">Privacy Policy</a></label>
+      </div>
+    </div>
+  </div>
+  <div class="row-form">
+    <div class="row">
+      <div class="col-md-6">
+        <button style="margin-left: 25%;" type="button">Cancel</button>
+        </div>
+        <div class="col-md-6">
+        <button style="margin-left: 25%;" type="button">Create my Account</button>
+        </div>
+
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
